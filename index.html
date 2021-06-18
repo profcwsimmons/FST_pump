@@ -41,7 +41,7 @@
       <a-box material="src: #crate" scale="1.5 1.5 1.5" position="-0.9 1.1 5.4" rotation="0 20 0"></a-box>
       <a-box material="src: #crate" scale="1.5 1.5 1.5" position="-4.6 1.1 5.4" rotation="0 -10 0"></a-box>
       <a-box material="src: #crate" scale="1.5 1.5 1.5" position="-4.6 1.1 3.7" rotation="0 -10 0"></a-box>
-       <a-box material="src: #crate" scale="1.5 1.5 1.5" position="-4.6 1.1 2" rotation="0 0 0"></a-box>
+      <a-box material="src: #crate" scale="1.5 1.5 1.5" position="-4.6 1.1 2" rotation="0 0 0"></a-box>
       <a-box material="src: #crate" scale="1.5 1.5 1.5" position="-4.6 2.6 2" rotation="0 5 0"></a-box>
       
       <!--stack lights-->
@@ -60,8 +60,6 @@
       
       <a-entity gltf-model="#navmesh" scale="0.15 0.15 0.15" position="0 -.3 -1" visible="true" nav-mesh></a-entity>
       <a-entity geometry="primitive: plane; height: 10; width: 10" material="src: #concrete; repeat:10 10" position="0 .3 0" rotation="-90 0 0"></a-entity>
-    <!--  <a-plane src="#concrete" position="0 0.85 -4" height="3" width="10" color="#6F6F6F"></a-plane>
-      <a-plane src="#concrete" position="5 0.85 -0" height="3" width="10" rotation="180 90 0" color="#6F6F6F"></a-plane> -->
       <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fnameplate4.jpg?v=1577234573055" position="0 1.5 -.83" scale="0.27 0.15"></a-image> <!--use nameplate 4 for 110L and nameplate 3 for 228-->
       <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fpressurelow.png?v=1575760372331" position="-1.08 1.715 -.99" scale="0.10 0.10"></a-image>
       <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fpressurehigh.png?v=1575867030103" position="-0.548 2.014 -.834" scale="0.10 0.10"></a-image>
@@ -73,15 +71,13 @@
       <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fscreen2.jpg?v=1577263575079" position="1.943 1.587 -.089" scale="0.517 0.329" rotation="-23 -90 0"></a-image>
       <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fshocksign.png?v=1577336869944" position="1.7 1.5 -3.99" scale="0.862 0.52" rotation="0 0 0"></a-image>
       <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fpowermeter2.png?v=1577480834643" position="3.12 1.639 -3.52" scale="0.275 0.374" rotation="0 0 0"></a-image>
-      
-        <a-sky src="#background"></a-sky>
+      <a-sky src="#background"></a-sky>
   
-      
-      
+      <!--Player rig-->
       <a-entity id="rig" movement-controls="speed: 0.08; constrainToNavMesh: true">
-          <a-entity camera position="0 1.6 0" look-controls></a-entity>
+        <a-entity camera position="0 1.6 0" look-controls></a-entity>
         <a-entity oculus-go-controls></a-entity>
-      <a-entity laser-controls="hand: right"></a-entity>
+        <a-entity laser-controls="hand: right"></a-entity>
       </a-entity>
 
     </a-scene>
