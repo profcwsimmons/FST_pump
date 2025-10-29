@@ -11,14 +11,14 @@
   <body>
     <a-scene background="color: #FAFAFA" renderer="colorManagement: true">
      <a-assets>
-      <a-asset-item id="gltf" src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fpumptest20.glb" ></a-asset-item>
-       <a-asset-itm id="navmesh" src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fpumpnavmesh7.glb"></a-asset-itm>
-       <a-asset-itm id="drum" src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fdrum.glb"></a-asset-itm>
-       <a-asset-itm id="crate" src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fcrate.jpg"></a-asset-itm>
-       <img id="concrete" src="https://cdn.glitch.me/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fconcrete.jpg">
-       <img id="background" src="https://cdn.glitch.me/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Findustrial_1k.jpg">
-       <img id="drumtex" src="https://cdn.glitch.me/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fdrum.jpg">
-       <img id="watertank" src="https://cdn.glitch.me/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fwatertank.jpg">
+      <a-asset-item id="gltf" src="assets/pumptest20.glb" ></a-asset-item>
+       <a-asset-itm id="navmesh" src="assets/pumpnavmesh7.glb"></a-asset-itm>
+       <a-asset-itm id="drum" src="assets/drum.glb"></a-asset-itm>
+       <a-asset-itm id="crate" src="assets/crate.jpg"></a-asset-itm>
+       <img id="concrete" src="assets/concrete.jpg">
+       <img id="background" src="assets/industrial_1k.jpg">
+       <img id="drumtex" src="assets/drum.jpg">
+       <img id="watertank" src="assets/watertank.jpg">
       </a-assets>
       
       <a-entity gltf-model="#gltf" scale="0.15 0.15 0.15" position="0 1.5 -1"></a-entity>
@@ -56,17 +56,17 @@
       
       <a-entity gltf-model="#navmesh" scale="0.15 0.15 0.15" position="0 -.3 -1" visible="true" nav-mesh></a-entity>
       <a-entity geometry="primitive: plane; height: 10; width: 10" material="src: #concrete; repeat:10 10" position="0 .3 0" rotation="-90 0 0"></a-entity>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fnameplate3.jpg?v=1577234573055" position="0 1.5 -.83" scale="0.27 0.15"></a-image> <!--use nameplate 4 for 110L and nameplate 3 for 228-->
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fpressurelow.png?v=1575760372331" position="-1.08 1.715 -.99" scale="0.10 0.10"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fpressurehigh.png?v=1575867030103" position="-0.548 2.014 -.834" scale="0.10 0.10"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Ftemperature.png?v=1576276834116" position="-0.899 1.678 -.99" scale="0.10 0.10"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fflow4.jpg?v=1577226106360" position="-0.79 2.525 -1.415" scale="0.09 0.05" rotation="30 -90 0"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fcaliper2.jpg?v=1577227766534" position="1.93 1.595 .606" scale="0.125 0.06" rotation="-48 -90 0"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fmeasure2.jpg?v=1579120776468" position="-0.8 1.82 -.965" scale="0.03 0.45"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fmeasure2.jpg?v=1579120776468" position="-0.8 1.82 -.966" scale="0.03 0.45" rotation="0 180 0"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fscreen2.jpg?v=1577263575079" position="1.943 1.587 -.089" scale="0.517 0.329" rotation="-23 -90 0"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fshocksign.png?v=1577336869944" position="1.7 1.5 -3.99" scale="0.862 0.52" rotation="0 0 0"></a-image>
-      <a-image src="https://cdn.glitch.com/13648f22-5ed9-4349-ad71-1e8bd63b6485%2Fpowermeter2.png?v=1577480834643" position="3.12 1.639 -3.52" scale="0.275 0.374" rotation="0 0 0"></a-image>
+      <a-image src="assets/nameplate3.jpg" position="0 1.5 -.83" scale="0.27 0.15"></a-image> <!--use nameplate 4 for 110L and nameplate 3 for 228-->
+      <a-image src="assets/pressurelow.png" position="-1.08 1.715 -.99" scale="0.10 0.10"></a-image>
+      <a-image src="assets/pressurehigh.png" position="-0.548 2.014 -.834" scale="0.10 0.10"></a-image>
+      <a-image src="assets/temperature.png" position="-0.899 1.678 -.99" scale="0.10 0.10"></a-image>
+      <a-image src="assets/flow4.jpg" position="-0.79 2.525 -1.415" scale="0.09 0.05" rotation="30 -90 0"></a-image>
+      <a-image src="assets/caliper2.jpg" position="1.93 1.595 .606" scale="0.125 0.06" rotation="-48 -90 0"></a-image>
+      <a-image src="assets/measure2.jpg" position="-0.8 1.82 -.965" scale="0.03 0.45"></a-image>
+      <a-image src="assets/measure2.jpg" position="-0.8 1.82 -.966" scale="0.03 0.45" rotation="0 180 0"></a-image>
+      <a-image src="assets/screen2.jpg" position="1.943 1.587 -.089" scale="0.517 0.329" rotation="-23 -90 0"></a-image>
+      <a-image src="assets/shocksign.png" position="1.7 1.5 -3.99" scale="0.862 0.52" rotation="0 0 0"></a-image>
+      <a-image src="assets/powermeter2.png" position="3.12 1.639 -3.52" scale="0.275 0.374" rotation="0 0 0"></a-image>
       <a-sky src="#background"></a-sky>
   
       <!--Player rig-->
